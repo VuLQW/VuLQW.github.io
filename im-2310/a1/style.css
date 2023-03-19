@@ -1,0 +1,45 @@
+#box-color{
+    border: 5px;
+    display: block;
+    border-style: solid;
+    max-width: 90%;
+    margin:0 auto;
+    margin-bottom: 25px;
+    border-color: goldenrod;
+    border-radius: 15px;
+    padding: 30px
+}
+
+.section-box{
+    border: 5px;
+    display: block;
+    border-style: solid;
+    max-width: 90%;
+    margin:0 auto;
+    margin-bottom: 25px;
+    border-color: goldenrod;
+    border-radius: 15px;
+    padding: 30px
+
+}
+
+img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    border-radius: 40px;
+
+}
+
+
+body {
+    background-color: rgb(32,42,68);
+    font-family:'Courier New', Courier, monospace;
+    color: white;
+
+}
+
+
+
+
