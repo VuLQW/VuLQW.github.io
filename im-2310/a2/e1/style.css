@@ -1,0 +1,146 @@
+*{
+box-sizing: border-box;
+margin: 0;
+}
+
+ maing this as a comment as root does not work with gradient 
+:root{
+    --col01: rgb(100,100,100)
+    --col02: rgb(108, 107, 107);
+    --col03: rgb(180, 177, 177);
+    --col04: rgb(135, 43, 43);
+    --col05: rgb(90, 47, 182);
+    --col06: rgb(34, 94, 115);
+    --col07: rgb(14, 168, 239);
+    --col08: rgb(50, 240, 21);
+    --col09: rgb(169, 231, 10);
+    --col10: rgb(196, 242, 12);
+    --col11: rgb(104, 41, 84);
+    --col12: rgb(42, 60, 139);
+    --col13: rgb(255, 255, 255);
+    --col14: rgb(255, 255, 255);
+    --col: rgb(255, 255, 255);
+    
+   
+
+
+
+
+}
+
+
+#container{
+    height:100vh;
+    border-style:solid;
+    border-color:transparent;
+    margin: 10px;
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr; 
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr; 
+    gap: 0px 0px; 
+    gap: 10px
+
+}
+
+#box1{
+    background: linear-gradient(150deg, rgb(116, 215, 214), pink);
+    border-radius: 100px 15px 15px 15px;
+}
+#box2{
+    background: linear-gradient( rgb(116, 215, 214), pink);
+    border-radius: 15px 15px 15px 15px;
+}
+#box3{
+    background: linear-gradient( rgb(116, 215, 214), pink);
+    border-radius: 15px 15px 15px 15px;
+}
+#box4{
+    background: linear-gradient( rgb(116, 215, 214), pink);
+    border-radius: 15px 15px 15px 15px;
+}
+#box5{
+    background: linear-gradient(210deg, rgb(116, 215, 214), pink);
+    border-radius: 15px 100px 15px 15px;
+}
+#box6{
+    background: linear-gradient( 90deg,rgb(116, 215, 214), pink);
+    border-radius: 15px 15px 15px 15px;
+}
+#box7{
+    background: linear-gradient(330deg, rgb(116, 215, 214),30%, pink);
+    border-radius: 100px 15px 15px 15px;
+}
+#box8{
+    background: linear-gradient( 360deg, rgb(116, 215, 214), pink);
+    border-radius: 15px 15px 15px 15px;
+}
+#box9{
+    background: linear-gradient(360deg, rgb(116, 215, 214), pink);
+    border-radius: 15px 15px 15px 15px;
+}
+#box10{
+    background: linear-gradient(315deg, rgb(116, 215, 214), pink);
+    border-radius: 15px 15px 100px 15px;
+}
+#box11{
+    background: linear-gradient(90deg,rgb(116, 215, 214), pink);
+    border-radius: 15px 15px 15px 15px;
+}
+#box12{
+    background: linear-gradient(210deg, rgb(116, 215, 214), pink);
+    border-radius: 15px 15px 15px 100px;
+}
+#box13{
+    background: linear-gradient( rgb(116, 215, 214), pink);
+    border-radius: 15px 15px 15px 15px;
+}
+#box14{
+    background: linear-gradient( rgb(116, 215, 214), pink);
+    border-radius: 15px 15px 15px 15px;
+}
+#box15{
+    background: linear-gradient(210deg, rgb(116, 215, 214), pink);
+    border-radius: 15px 100px 15px 15px;
+}
+#box16{
+    background: linear-gradient(90deg, rgb(116, 215, 214), pink);
+    border-radius: 15px 15px 15px 15px;
+}
+#box17{
+    background: linear-gradient(150deg, rgb(116, 215, 214),50%, pink);
+    border-radius: 100px 15px 15px 15px;
+}
+#box18{
+    background: linear-gradient( rgb(116, 215, 214), pink);
+    border-radius: 15px 15px 15px 15px;
+}
+#box19{
+    background: radial-gradient(rgb(116,215,214) 10px, pink 50%);
+    border-radius: 15px 15px 15px 15px;
+}
+#box20{
+    background: linear-gradient(270deg, rgb(116, 215, 214), pink);
+    border-radius: 15px 15px 15px 15px;
+}
+#box21{
+    background: radial-gradient(pink 10px, rgb(116,215,214) 90%);
+    border-radius: 15px 15px 100px 100px;
+}
+#box22{
+    background: linear-gradient(45deg, rgb(116, 215, 214), pink);
+    border-radius: 15px 15px 15px 100px;
+}
+#box23{
+    background: linear-gradient(360deg, rgb(116, 215, 214), pink);
+    border-radius: 15px 15px 15px 15px;
+}
+#box24{
+    background: linear-gradient(360deg, rgb(116, 215, 214), pink);
+    border-radius: 15px 15px 15px 15px;
+}
+#box25{
+    background: linear-gradient(315deg, rgb(116, 215, 214), pink);
+    border-radius: 15px 15px 100px 15px;
+}
+
+
