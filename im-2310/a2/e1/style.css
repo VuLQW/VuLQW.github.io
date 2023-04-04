@@ -3,7 +3,7 @@ box-sizing: border-box;
 margin: 0;
 }
 
- maing this as a comment as root does not work with gradient 
+ /*maing this as a comment as root does not work with gradient 
 :root{
     --col01: rgb(100,100,100)
     --col02: rgb(108, 107, 107);
@@ -27,7 +27,7 @@ margin: 0;
 
 
 }
-
+*/
 
 #container{
     height:100vh;
