@@ -3,9 +3,9 @@ box-sizing: border-box;
 margin: 0;
 }
 
- /*maing this as a comment as root does not work with gradient 
+ 
 :root{
-    --col01: rgb(100,100,100)
+    --col01: linear-gradient(150deg, rgb(116, 215, 214), pink);
     --col02: rgb(108, 107, 107);
     --col03: rgb(180, 177, 177);
     --col04: rgb(135, 43, 43);
@@ -27,7 +27,7 @@ margin: 0;
 
 
 }
-*/
+
 
 #container{
     height:100vh;
@@ -43,7 +43,7 @@ margin: 0;
 }
 
 #box1{
-    background: linear-gradient(150deg, rgb(116, 215, 214), pink);
+    background: var(--col01);
     border-radius: 100px 15px 15px 15px;
 }
 #box2{
