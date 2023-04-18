@@ -1,0 +1,200 @@
+/* z-index order */
+
+*{
+  box-sizing: border-box;
+  background-origin: border-box;
+  margin: 0;
+}
+
+/* Basis for colour palette comes from 1bit Monitor Glow Palette by Polyducks */
+/* https://lospec.com/palette-list/1bit-monitor-glow */
+/* you're welcome to change the colours if you want or any of the other general page style */
+:root{
+  --col-01:#222323;
+  --col-02:#f8412d;
+  --col-03:#5252ff;
+  --col-04:#b6e878;
+  --col-05:#FFCBC1;
+  --border: 7px solid var(--col-02);
+
+}
+
+body{
+  display: flex;
+  flex-direction: column;
+  background-color: var(--col-05);
+  color: var(--col-02);
+  padding: 2vw;
+  gap: 20px;
+}
+
+/*
+  i've set up a basic flexbox for each recipe container - you might want to change some of the 
+  flex properties here on the container or on the individual flex items depending on how you want to style them
+*/
+.RecipeBox{
+  display: flex;
+  flex-direction: column;
+  border: var(--border);
+  border-radius:10px;
+
+  }
+
+  .font{
+    font-family: 'Chivo Mono', monospace;
+    font-family: 'Montserrat', sans-serif;
+  }
+
+.FilterSection{
+  font-family: 'Chivo Mono', monospace;
+  font-family: 'Montserrat', sans-serif;
+}
+
+details {
+  font: 16px "Open Sans", Calibri, sans-serif;
+  width: 620px;
+}
+
+details > summary {
+  padding: 2px 6px;
+  width: 15em;
+  background-color: var(--col-05);
+  border: none;
+  box-shadow: 3px 3px 4px black;
+  cursor: pointer;
+  list-style: none;
+}
+
+details > p {
+  border-radius: 0 0 10px 10px;
+  background-color: var(--col-05);
+  padding: 2px 6px;
+  margin: 0;
+  box-shadow: 3px 3px 4px black;
+}
+
+
+.FilterBox{
+
+}
+
+.FilterButton{
+
+}
+
+.SelectedFilter{
+  
+}
+
+.RecipeLink{
+  font-family: 'Chivo Mono', monospace;
+  font-family: 'Montserrat', sans-serif;
+  color: var(--col-01);
+  text-align:center;
+}
+
+.RecipeName{
+  font-family: 'Chivo Mono', monospace;
+  font-family: 'Montserrat', sans-serif;
+  color: var(--col-01);
+  text-align:center;
+}
+
+.Author{
+  font-family: 'Chivo Mono', monospace;
+  font-family: 'Montserrat', sans-serif;
+  color: var(--col-01);
+  text-align:center;
+}
+
+.RecipeImageContainer{
+
+}
+
+.RecipeImg{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width:40%;
+  border-radius: 40px;
+
+}
+
+.Attribution{
+  font-family: 'Chivo Mono', monospace;
+  font-family: 'Montserrat', sans-serif;
+  color: var(--col-01);
+  text-align:center;
+}
+
+.Publisher{
+
+  font-family: 'Chivo Mono', monospace;
+  font-family: 'Montserrat', sans-serif;
+  color: var(--col-01);
+  text-align:center;
+}
+
+.Cuisine{
+  font-family: 'Chivo Mono', monospace;
+  font-family: 'Montserrat', sans-serif;
+  color: var(--col-01);
+  text-align:center;
+}
+
+.TimeToCook{
+  font-family: 'Chivo Mono', monospace;
+  font-family: 'Montserrat', sans-serif;
+  color: var(--col-01);
+  text-align:center;
+}
+
+.SkillLevel{
+  font-family: 'Chivo Mono', monospace;
+  font-family: 'Montserrat', sans-serif;
+  color: var(--col-01);
+  text-align:center;
+}
+
+.Course{
+  font-family: 'Chivo Mono', monospace;
+  font-family: 'Montserrat', sans-serif;
+  color: var(--col-01);
+  text-align:center;
+}
+
+.Servings{
+  font-family: 'Chivo Mono', monospace;
+  font-family: 'Montserrat', sans-serif;
+  color: var(--col-01);
+  text-align:center;
+}
+
+.Dietary{
+  font-family: 'Chivo Mono', monospace;
+  font-family: 'Montserrat', sans-serif;
+  color: var(--col-01);
+  text-align:center;
+}
+
+.DatePublished{
+  font-family: 'Chivo Mono', monospace;
+  font-family: 'Montserrat', sans-serif;
+  color: var(--col-01);
+  text-align:center;
+}
+
+.DateUpdated{
+  font-family: 'Chivo Mono', monospace;
+  font-family: 'Montserrat', sans-serif;
+  color: var(--col-01);
+  text-align:center;
+}
+
+.SpecialEquipment{
+  font-family: 'Chivo Mono', monospace;
+  font-family: 'Montserrat', sans-serif;
+  color: var(--col-01);
+  text-align:center;
+}
+
