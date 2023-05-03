@@ -1,0 +1,308 @@
+/*
+  This one CSS file is imported into both index.html AND hosono.html so you need to be careful that it 
+  works for both.
+*/
+
+*{
+
+  box-sizing: border-box;
+  background-origin: border-box;
+  margin: 0;
+  ;
+}
+
+:root{
+  /* first two colours come from Kuroi's Manga Pallete Palette */
+  /* https://lospec.com/palette-list/manga-pallete */
+  --col-01:#171219;
+  --col-02:#f2fbeb;
+  --col-03:#5252ff;
+  --col-04:#b6e878;
+  font-size: 16px;
+  /* scroll behaviour makes the <a> links to ids scroll to position over time rather than immediately */
+  scroll-behavior: smooth;
+}
+
+body{
+  padding: 1rem;
+  background-color: var(--col-02);
+  color: var(--col-01);
+  font-family: 'Sigmar', cursive;
+}
+
+nav {
+  margin-top: 1rem;
+
+}
+
+nav li{
+  font-size: 1rem;
+  border: none;
+  color: black;
+  padding: 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 15px;
+  
+  
+
+}
+
+nav li:hover{
+  box-shadow: 0 12px 16px 0 var(--col-04),0 17px 50px 0 var(--col-04);
+
+}
+
+nav li:active{
+    background-color: var(--col-04);
+}
+
+section{
+  margin-bottom: 2rem;
+}
+
+h1{
+  font-size: 3rem;
+}
+
+h2{
+  font-size: 2rem;
+  text-align:center;  
+}
+
+p{
+  font-size: 1rem;
+  margin-top: 1rem;
+  text-align: justify;
+}
+
+figcaption{
+  width: fit-content;
+}
+
+dl ul{
+  margin-bottom: 0;
+}
+
+li{
+  font-size: 1rem;
+}
+
+dd{
+  padding-left: 60px;
+}
+
+li ul{
+  padding-left: 40px;
+}
+
+.img-wrapper{
+  width: 100%;
+  margin-bottom: 1.5rem;
+}
+
+.img-figure{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.article-img{
+  width: 80%;
+  border-radius: 10px;
+  border: solid  20px;
+  border-color:#b6e878;
+}
+
+.res-columns{
+  column-width: 25rem;
+}
+
+#mode-button{
+  float: right;
+  /* note the use of position: sticky to keep the button on the page even with scrolling */
+  position: sticky;
+  z-index:1;
+  text-decoration: none;
+  transition: color 0.25s ease-in-out;
+  padding: 0.5rem;
+  border-radius: 10px; 
+  font-family: 'Sigmar', cursive; 
+  
+
+
+}
+
+#mode-button::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 100%; /* this is the direction the swipe goes */
+  bottom: 0;
+  background-color: var(--col-04);
+  transition: right 0.25s ease-in-out;
+  border-radius: 10px;  
+  font-family: 'Sigmar', cursive;
+}
+
+#mode-button:hover {
+  color: white;
+  transition: color 0.5s ease-in-out;
+  border-radius: 10px;  
+  font-family: 'Sigmar', cursive;
+
+}
+
+#mode-button:hover::after {
+  right: 0; /* this is the direction the swipe goes */
+  transition: right 0.5s ease-in-out;
+  border-radius: 10px; 
+  font-family: 'Sigmar', cursive; 
+
+
+}
+#mode-button:active{
+  color: black;
+  font-family: 'Sigmar', cursive;
+}
+
+#mode-button:active{
+  background-color:var(--col-03) ;
+  font-family: 'Sigmar', cursive;
+}
+
+#load-body{
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+/* changing button to look like a link */
+#load-link{
+  line-height: 1rem;
+  padding: 15px 25px;
+  font-size: 24px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: black;
+  background-color: var(--col-02);
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+
+#load-link:hover {background-color: var(--col-02);}
+
+#load-link:active {
+  background-color: var(--col-02);
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+/* throbber while page is fake loading */
+#load-throbber{
+  /* the width, height and background-color give it a shape on the page without any content inside - 
+  these value are arbitrary, please change to create your own design  */
+  animation: 1.5s linear infinite spinner;
+  animation-play-state: inherit;
+  border: solid 5px #cfd0d1;
+  border-bottom-color: var(--col-04);
+  border-radius: 50%;
+  content: "";
+  height: 40px;
+  width: 40px;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate3d(-50%, -50%, 0);
+  will-change: transform;
+  display: none;
+  
+}
+@keyframes spinner {
+  0% {
+    transform: translate3d(-50%, -50%, 0) rotate(0deg);
+  }
+  100% {
+    transform: translate3d(-50%, -50%, 0) rotate(360deg);
+  }
+}
+
+
+
+
+/* Media Queries */
+
+/* medium devices 600 - 992 */
+@media only screen and (min-width: 600px) {
+  :root{
+    font-size: 20px;
+  }
+  
+  .img-wrapper{
+    width: 75%;
+    margin: 1.5rem auto;
+  }
+
+}
+
+/* medium devices 992 + */
+@media only screen and (min-width: 992px) {
+  :root{
+    font-size: 24px;
+  }
+
+  .img-wrapper{
+    max-width: fit-content;
+    float: right;
+    margin: 1.5rem;
+  }
+
+}
+
+@media (prefers-reduced-motion) {
+  :root{
+    scroll-behavior: auto;
+  }
+}
+
+a{
+  color:#1c87c9;
+}
+
+button {
+  
+  border: 2px solid black;
+  border-radius: 0px;
+  padding: 18px 36px;
+  display: inline-block;
+  font-family: "Lucida Console", Monaco, monospace;
+  font-size: 14px;
+  letter-spacing: 1px;
+  cursor: pointer;
+  box-shadow: inset 0 0 0 0 var(--col-04);
+  -webkit-transition: ease-out 0.4s;
+  -moz-transition: ease-out 0.4s;
+  transition: ease-out 0.4s;
+  font-family: 'Sigmar', cursive; 
+}
+
+
+
+button:hover {
+  box-shadow: inset 0 0 0 50px var(--col-01);
+}
+
+
+
+button {
+  width: 364px;
+  margin: 50px auto 0 auto;
+  text-align: center;
+}
