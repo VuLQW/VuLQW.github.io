@@ -2,20 +2,51 @@
 
 <html lang="en">
 
-    <head>
+  <head>
 
-        <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Player Experiment</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="playerControls.js" defer></script>
 
-        <link rel="stylesheet" href="style.css">
+  </head>
 
-        <script src="script.js"></script>
+<!--For this assingment I decided to use the fullscreen button as an for the video element. FOr the coding I implemented the toggle function so that the fullscreen
+could be initiated on click. One of the difficulties were that the icon for the fullscreen was stuck to the left side of the control bar. I tried meddling around with float and other various
+code that would bring the fullscreen element to the right but it didnt work. The simple solution that worked was to move the <button> that belonged to the fullscreen
+element to the end after the proress bar as the <div> worked as a list. After I realised that the element was just a button so using some knowledge of the 
+previous assignment, I decided to animate the hovering of the fullscreen button so the user knows that t is a button waiting to be clicked.
+The animation eased into the centre of the button. I chose this animation as it show that by pressing onto the button the user is somewhat focussing on the content
+which is followed by the fullscreen which focusses on the content by filling the whole screen with the video.  -->
 
-    </head>
+  <body>
 
-    <body>
+    <!-- this element holds all of the media player -->
+    <div class="video-player-wrapper">
+      <!-- this element holds the video element and the overlay -->
+      <div class="video-element-wrapper">
 
-        <h1>This is a text page</h1>
+        <video id="videoElement" controls>
+          <source id src="https://thelongesthumstore.sgp1.cdn.digitaloceanspaces.com/IM-2250/miac.mp4" type="video/mp4">
+        </video>
 
-    </body>
+        <img id="videoPlayOverlay" src="./icons/play.svg">
+
+      </div>
+      <!-- this element holds all of the custom controls -->
+      <div class="video-controls-wrapper" id="controlsWrapper">
+
+        <button class="video-control-button" id="playButton"></button>
+        <button class="video-control-button" id="muteButton"></button>
+        
+
+        <progress class="video-progress-bar" id="progressBar" value="0"></progress>
+        <button class="video-control-button" id="fullScreenButton"></button>
+
+      </div>
+
+    </div>
+
+  </body>
 
 </html>
