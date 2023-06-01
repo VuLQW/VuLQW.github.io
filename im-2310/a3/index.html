@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" name="viewport" content="width=device">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title> Assignment Drawing</title>
+
+</head>
+
+<body>
+
+    <div id="drawing-canvas-wrapper">   
+    <canvas id="drawing-canvas"></canvas>
+
+    <img id="img" src="img/stock.jpeg" width="960" height="540" alt="stock image">
+    For this interaction I chose playful and feedback. My original plan was to create a canvas in which acts like a scratch card.
+    This was my way of showing the content, being that the user had to remove the layer to reveal the content, thus making it playful.
+    To pair with this, I decided to use debris to make it even more playful as well as providing a bit of feedback.
+    By having debris associated with the size of the eraser, users would be less inclined to choose the bigger brush size to remove the scratch card to reveal the content.
+    This would mean they would choose a size suitable for them in which they would not have to cheat the system. To add more interaction I conceptualised a hand tool, whereby clicking on it will allow the user to take the debris out of
+     the screen making it more fun and playful.
+    It would allow users to choose multiple brush sizes(erasing tool size).
+    Even if they were to choose the largest brush size with the most debris, then they could navigate to the tool to remove the debris. 
+     Associated with the size of the erasing tool, the larger the size gets the more debris is made when taking off the layer on the canvas to reveal the content. 
+    An issue with that was come across was that I was not able to create the erasing tool. I tried using the masking image code however that did not work.
+    I also did some searching for other different codes to incorporate within my JavaScript, however in doing so, that prevented the paint tool to work.
+    After attempting to get the eraser tool work, I eventually decided to water down the concept (due to time restraints) where the content is shown however, the user is able to play with the drawing tool,
+     drawing what they would like over the content. In doing so, I changed the colour of the canvas to transparent in my CSS file so the content could be shown without the white background covering it.
+      With CSS I also moved the elements in the middle for ease of access and used stock images which represent my supposed content, since I wanted to focus more on the interaction.
+       I modified the resizing of the canvas putting it at 100% and positioning it to the top left corner so that the whole page becomes a canvas instead of just 1 particular area.
+        Users are still able to change the colour of the paint brush as well as changing the brush size which suits their liking. Originally the brush was very jagged around the edges which made the drawing hard to look at.
+         A nice feature was to set lineCap as round in JavaScript which fixed the issue.
+
+  
+</div>
+
+<div id="brush-controls">
+
+  <input id="colour-picker" type="color" />
+
+  <input id="size-picker" type="range"
+        min="1" max="50" />
+</div>
+
+<script src="draw.js"></script>
+
+</body>
+
+
+
+</html>

@@ -1,0 +1,45 @@
+*{
+    box-sizing: border-box;
+    background-origin: border-box;
+    margin: 0;
+}
+
+:root{
+    --col-01: #222323;
+    --col-02: #5252ff;
+    --col-03: #b6e878;
+}
+
+body {
+    background-color: paleturquoise;
+}
+
+#drawing-canvas{
+    position: absolute;
+    background-color: transparent;
+    width: 100%;
+    height: 100%;
+}
+
+#brush-controls{
+    position: absolute;
+    top: 0%;
+    left: 90%;
+    z-index: 2;
+}
+
+#drawing-canvas-wrapper{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height:100%;
+
+}
+
+#img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
