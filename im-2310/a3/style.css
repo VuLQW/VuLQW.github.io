@@ -3,32 +3,27 @@
     background-origin: border-box;
     margin: 0;
 }
-
-:root{
-    --col-01: #222323;
-    --col-02: #5252ff;
-    --col-03: #b6e878;
-}
+/*Created border and margian for page*/
 
 body {
-    background-color: paleturquoise;
+    background-color: paleturquoise;/* backround colour of the page is paleturquoise*/
 }
 
-#drawing-canvas{
+#drawing-canvas{ /*Drawing canvas that is created in javascript is positioned. Its background colour is declared as transparent to see other elements on page*/
     position: absolute;
     background-color: transparent;
     width: 100%;
     height: 100%;
 }
 
-#brush-controls{
+#brush-controls{ /*controls of colour picker and brush size is created and positioned on right side of page */
     position: absolute;
     top: 0%;
     left: 90%;
     z-index: 2;
 }
 
-#drawing-canvas-wrapper{
+#drawing-canvas-wrapper{ /*canvas is positioned on the top left with 100% width and height to fill the entire screen. This changes with respect to resizing function in javascript*/
     position: absolute;
     top: 0%;
     left: 0%;
@@ -37,7 +32,7 @@ body {
 
 }
 
-#img{
+#img{ /*Centering image */
     display: block;
     margin-left: auto;
     margin-right: auto;
